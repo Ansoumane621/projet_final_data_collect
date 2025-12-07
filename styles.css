@@ -1,0 +1,66 @@
+.app-title{font-size:40px;font-weight:bold;text-align:center;color:white;} 
+
+div.stButton > button ,.btn {
+    width: 100% !important;         /* largeur max */
+    height: 50px !important;        /* hauteur des boutons */
+    font-size: 20px !important;     /* taille du texte */
+     /* couleur fond */
+    color: black !important;        /* couleur texte */
+    border-radius: 10px !important; /* arrondi des bords */
+    transition: 0.3s ease-in-out;
+    border:none;
+}
+
+div.stButton > button:hover,div.stButton:hover,.btn:hover {
+    background-color: transparent !important;
+    transform: scale(1);
+    color:#E6E6FA !important;
+    border : 0.5px solid #E6E6FA;
+    border-radius: 10px !important; /* arrondi des bords */
+}
+#button_block {
+    margin-top: 60px;   /* 🔥 augmente la valeur si tu veux plus d'espace */
+}
+
+
+
+    /* Background image pour toute l'app */
+.stApp {
+     background: url('https://images.unsplash.com/photo-1557683316-973673baf926') !important;
+    background-size: cover !important;
+        background-position: center !important;
+        background-attachment: fixed !important;
+    }
+
+        /* Overlay semi-transparent */
+    .stApp:before {
+        content: '';
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+
+        /* background: rgba(255, 255, 255, 0.85); */
+        z-index: -1;
+        }
+        .app1{
+            color:white !important;
+            font-size:20px;
+        }
+            
+        .subtitle{
+            color:white !important;
+            font-size:22px;
+        }
+            
+        li>a{
+            font-size:22px;
+            color:blue
+        }
+
+        .p-t,h5{
+            color:white !important;
+        }
+
+    
