@@ -74,6 +74,27 @@ div.stButton > button:hover,div.stButton:hover,.btn:hover {
 
 
 
+.btn-custom {
+     width: 100% !important;         /* largeur max */
+    height: 50px !important;        /* hauteur des boutons */
+    font-size: 20px !important;     /* taille du texte */
+     /* couleur fond */
+    color: black !important;        /* couleur texte */
+    border-radius: 10px !important; /* arrondi des bords */
+    transition: 0.3s ease-in-out;
+    border:none;
+}
+.btn-custom:hover {
+    background-color: transparent !important;
+    transform: scale(1);
+    color:#E6E6FA !important;
+    border : 0.5px solid #E6E6FA;
+    border-radius: 10px !important; /* arrondi des bords */
+}
+
+
+
+
         /* Couleur du texte des liens */
 [data-testid="stSidebarNav"] a {
     color: white !important;         /* couleur du texte */

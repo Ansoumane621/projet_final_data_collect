@@ -58,8 +58,11 @@ with st.container():
             col1, col2, col3 = st.columns([1, 2, 1])  # col2 = au centre
             with col2:
                 st.markdown('<div id="button_block">', unsafe_allow_html=True)
-
-                if st.button('Vêtements Hommes'):
+                
+                clicked = st.markdown(
+                "<button class='btn-custom'>Vêtements Hommes</button>",
+                unsafe_allow_html=True)
+                if clicked:
                     data = vetement_homme.clear_data(add_selectbox)
                     rows, cols = data.shape
                     st.markdown('<h5>Display data dimension</h5>',unsafe_allow_html=True)
@@ -76,6 +79,9 @@ with st.container():
                         file_name="vetement_hommes.csv",
                         mime="text/csv"
                     )
+                    
+                # if st.button('Vêtements Hommes'):
+                    
 
                 if st.button('Chaussures Hommes'):
                     data = chaussures_homme.clear_data(add_selectbox)
