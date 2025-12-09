@@ -63,4 +63,23 @@ div.stButton > button:hover,div.stButton:hover,.btn:hover {
             color:white !important;
         }
 
+
+
+
+        /* Couleur du texte des liens */
+[data-testid="stSidebarNav"] a {
+    color: white !important;         /* couleur du texte */
+    font-weight: bold;
+}
+
+/* Couleur du texte quand page active */
+[data-testid="stSidebarNav"] a:hover {
+    color: #00C6FF !important;        /* couleur lors du hover */
+}
+
+/* Forcer l'élément actif */
+[data-testid="stSidebarNav"] .css-1j3p5b5 {
+    color: #00C6FF !important;        /* couleur active */
+}
+
     
