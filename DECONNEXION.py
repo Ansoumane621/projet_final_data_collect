@@ -113,7 +113,8 @@ with st.container():
 
         username = st.text_input("Username")
         password = st.text_input("password", type="password")
-        login = st.button("Log in")
+        left, middle, right = st.columns(3)
+        login = st.button("Log in",use_container_width=True)
 
         st.markdown('</div>', unsafe_allow_html=True)
 
