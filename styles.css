@@ -11,6 +11,14 @@ div.stButton > button ,.btn {
     border:none;
 }
 
+.link{
+    color:rgb(31, 68, 218) !important;
+}
+
+.tiret{
+    color: white !important;
+}
+
 div.stButton > button:hover,div.stButton:hover,.btn:hover {
     background-color: transparent !important;
     transform: scale(1);

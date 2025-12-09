@@ -1,9 +1,9 @@
 import pandas as pd
 import streamlit as st
-import vetement_homme 
-import chaussure_enfant
-import chaussures_homme
-import vetement_enfant
+import functions.vetement_homme as vetement_homme 
+import functions.chaussure_enfant as chaussure_enfant
+import functions.chaussures_homme as chaussures_homme
+import functions.vetement_enfant as vetement_enfant
 import plotly.express as px
 
 # --- Configuration de la page
@@ -51,7 +51,7 @@ with st.container():
         st.markdown('<div class="app1">This app performs webscraping of data from dakar-auto over multiples pages. And we can also download scraped data from the app directly without scraping them.</div>',unsafe_allow_html=True)
         
         st.markdown('<li class="subtitle">Python libraries: base64, pandas, streamlit, requests, bs4</li>',unsafe_allow_html=True)
-        st.markdown('<li class="subtitle">Data source : <a href="https://www.expat-dakar.com/" target="_blank"> Expat Dakar<a/> --- <a href="https://dakar-auto.com/senegal" target="_blank">Dakar Auto<a/></li>',unsafe_allow_html=True)
+        st.markdown('<li class="subtitle">Data source : <a class="link" href="https://www.expat-dakar.com/" target="_blank"> Expat Dakar<a/> <span class="tiret">---</span> <a class="link" href="https://dakar-auto.com/senegal" target="_blank">Dakar Auto<a/></li>',unsafe_allow_html=True)
         
         if add_select_file =='Scrape Data beautifulSoup':
             
