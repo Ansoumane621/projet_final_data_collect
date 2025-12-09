@@ -275,3 +275,5 @@ with st.container():
     else:
         st.toast("Veuillez vous connecter pour accéder à l'application.")
         st.switch_page('./DECONNEXION.py')
+    
+    
