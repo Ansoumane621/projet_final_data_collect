@@ -55,7 +55,7 @@ with st.container():
         
         if add_select_file =='Scrape Data beautifulSoup':
             
-            col1, col2, col3 = st.columns([1, 3, 1])  # col2 = au centre
+            col1, col2, col3 = st.columns([1, 1, 1])  # col2 = au centre
             with col2:
                 st.markdown('<div id="button_block">', unsafe_allow_html=True)
 
