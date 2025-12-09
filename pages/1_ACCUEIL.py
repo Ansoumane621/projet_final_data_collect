@@ -55,7 +55,7 @@ with st.container():
         
         if add_select_file =='Scrape Data beautifulSoup':
             
-            col1, col2, col3 = st.columns([1, 1, 1])  # col2 = au centre
+            col1, col2, col3 = st.columns([1, 3, 1])  # col2 = au centre
             with col2:
                 st.markdown('<div id="button_block">', unsafe_allow_html=True)
                     
@@ -138,7 +138,7 @@ with st.container():
             with col2:
                 st.markdown('<div id="button_block">', unsafe_allow_html=True)
 
-                if st.button('Vêtements Hommes'):
+                if st.button('Vêtements Hommes',use_container_width=True):
                     # data = vetement_homme.main_info_vetement(119)
                     data = pd.read_csv('data/vetement_hommes.csv')
                     rows, cols = data.shape
@@ -157,7 +157,7 @@ with st.container():
                         mime="text/csv"
                     )
 
-                if st.button('Chaussures Hommes'):
+                if st.button('Chaussures Hommes',use_container_width=True):
                     # data = chaussures_homme.main_info_chaussures_hommes(119)
                     data = pd.read_csv('data/chaussures_hommes.csv')
                     rows, cols = data.shape
@@ -175,7 +175,7 @@ with st.container():
                         mime="text/csv"
                     )
 
-                if st.button('Vêtements Enfants'):
+                if st.button('Vêtements Enfants',use_container_width=True):
                     # data = vetement_enfant.main_info_vetements_enfants(119)
                     data = pd.read_csv('data/vetement_enfants.csv')
                     rows, cols = data.shape
@@ -193,7 +193,7 @@ with st.container():
                         mime="text/csv"
                     )
 
-                if st.button('Chaussures Enfants'):
+                if st.button('Chaussures Enfants',use_container_width=True):
                     # data = chaussure_enfant.main_info_chaussures_enfants(119)
                     data = pd.read_csv('data/chaussure_enfant.csv')
                     rows, cols = data.shape
